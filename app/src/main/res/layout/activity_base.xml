@@ -1,0 +1,69 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:paddingTop="12dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:minHeight="68dp">
+
+        <TextView
+            android:id="@+id/leftText"
+            style="@style/ToolBarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="13dp"
+            android:layout_gravity="left|center"
+            android:singleLine="true"
+            android:textSize="@dimen/small_text_size"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/centerText"
+            style="@style/ToolBarTitle"
+            android:layout_width="wrap_content"
+            android:paddingTop="15dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/rightText"
+            style="@style/ToolBarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:paddingTop="13dp"
+            android:gravity="center"
+            android:layout_marginRight="15dp"
+            android:singleLine="true"
+            android:textSize="@dimen/small_text_size"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/rightImg"
+            style="@style/ToolBarTitle"
+            android:layout_width="24dp"
+            android:layout_height="28dp"
+            android:visibility="gone"
+            android:scaleType="fitXY"
+            android:layout_gravity="right|center"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginRight="15dp"
+             />
+
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:id="@+id/toolbar_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider"
+        android:layout_marginTop="67.6dp"
+        android:background="@color/grey_c" />
+
+</FrameLayout>

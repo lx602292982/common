@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff149691</color>
+    <color name="colorPrimaryDark">#ff149691</color>
+    <color name="colorAccent">#ff149691</color>
+
+    <color name="red">#bf360c</color>
+    <color name="ripple_red">#ffbf5232</color>
+    <color name="black_t_60">#96000000</color>
+
+    <color name="material_teal">@color/material_deep_teal_500</color>
+    <color name="ripple_material_teal">#ff149691</color>
+
+    <color name="blue">#304f9f</color>
+    <color name="grey">@color/material_blue_grey_800</color>
+    <color name="light">@color/primary_material_light</color>
+
+
+    <color name="windowBackgroundColor">#333333</color>
+    <color name="black_translucent">#80000000</color>
+
+    <!-- #25b6ed -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+
+    <color name="black_t_50">#80000000</color>
+    <color name="white_t_60">#96FFFFFF</color>
+    <color name="black_3">#333333</color>
+    <color name="black_6">#666666</color>
+    <color name="black_9">#999999</color>
+    <color name="grey_d">#dddddd</color>
+    <color name="grey_ea">#eaeaea</color>
+    <color name="grey_6a">#6a6a6a</color>
+    <color name="grey_c">#cccccc</color>
+    <color name="grey_9e">#9e9e9e</color>
+    <color name="grey_ef">#efeff4</color>
+    <color name="grey_f2">#f2f2f2</color>
+    <color name="grey_f8">#f8f8f8</color>
+    <color name="grey_df">#dfdfdf</color>
+    <color name="grey_d5">#d5d5d5</color>
+    <color name="grey_6d">#6d7586</color>
+    <color name="grey_44">#44474e</color>
+    <color name="grey_aa">#aaaaaa</color>
+    <color name="grey_b">#bbbbbb</color>
+    <color name="window_bg">#f8f8f8</color>
+    <color name="orange">#ff8800</color>
+    <color name="orange_55">#ff5500</color>
+    <color name="tab_bg">#f6f6f6</color>
+    <color name="tab_text_color">#5f646e</color>
+    <color name="tab_text_click_color">#00a2f5</color>
+    <color name="divider">#dfdfdf</color>
+    <color name="title_divider">#dedede</color>
+    <color name="start_color">#4ec3ff</color>
+
+    <color name="start_green">#50e29a</color>
+    <color name="start_yello">#fdd700</color>
+    <color name="start_blue">#00c2df</color>
+    <color name="buy_car">#ef6060</color>
+    <color name="use_car">#ff8800</color>
+    <color name="repair">#6abe24</color>
+    <color name="supplies">#b06be9</color>
+    <color name="charts1">#12a8df</color>
+    <color name="charts2">#08768e</color>
+    <color name="charts3">#31ab48</color>
+    <color name="charts4">#eeed00</color>
+    <color name="charts5">#ea7d14</color>
+    <color name="charts6">#ea4b14</color>
+    <color name="charts7">#a94f30</color>
+    <color name="red_ff">#ff7c7c</color>
+    <color name="red_fe">#fe8080</color>
+
+    <color name="red_shop_price">#d31b22</color>
+    <color name="transparent">#00000000</color>
+    <color name="game_question">#4e2625</color>
+
+    <color name="translucent_white">#7FFFFFFF</color>
+    <color name="translucent_white_percent_50">#7f7f7f7f</color>
+    <color name="translucent_black">#E0000000</color>
+    <color name="translucent_black_1">#1F000000</color>
+    <color name="translucent_black_percent_75">#BD000000</color>
+    <color name="translucent_black_percent_50">#7F000000</color>
+    <color name="translucent_black_percent_25">#3F000000</color>
+
+    <color name="light_blue_me_sign">#79b8ce</color>
+    <color name="pink_level">#ff6479</color>
+    <color name="yellow_level">#ff9700</color>
+    <color name="yellow_buy">#ff9e05</color>
+
+    <color name="red_ff6464">#ff6464</color>
+    <color name="timeline_blue">#ff90ebfe</color>
+</resources>

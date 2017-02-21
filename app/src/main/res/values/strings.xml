@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">爆笑逗乐</string>
+    <string name="loading_msg">努力加载中...</string>
+
+    <string name="load_loading_tip">努力加载中</string>
+    <string name="load_failed_tip">点我再试试？</string>
+    <string name="load_end_tip">--end--</string>
+
+    <string name="empty_msg">没有相关数据信息！</string>
+    <string name="error_msg">加载数据失败，点击重试</string>
+    <string name="but_try_again">再试一次</string>
+</resources>

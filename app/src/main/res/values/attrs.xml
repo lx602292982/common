@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <declare-styleable name="FloatingActionButton">
+        <attr name="fab_colorPressed" format="color" />
+        <attr name="fab_colorNormal" format="color" />
+        <attr name="fab_colorRipple" format="color" />
+        <attr name="fab_shadow" format="boolean" />
+    </declare-styleable>
+
+
+    <declare-styleable name="RoundRect">
+        <attr name="borderRadius" format="dimension" />
+        <attr name="bgColor" format="color" />
+        <attr name="src" format="reference"></attr>
+        <attr name="text" format="string"></attr>
+        <attr name="text_size" format="dimension"></attr>
+    </declare-styleable>
+    <declare-styleable name="roundedimageview">
+        <attr name="border_thickness" format="dimension" />
+        <attr name="border_inside_color" format="color" />
+        <attr name="border_outside_color" format="color"></attr>
+    </declare-styleable>
+    <declare-styleable name="CropImageView">
+        <attr name="guidelines">
+            <enum name="on" value="2" />
+            <enum name="onTouch" value="1" />
+            <enum name="off" value="0" />
+        </attr>
+        <attr name="fixAspectRatio" format="boolean" />
+        <attr name="aspectRatioX" format="integer" />
+        <attr name="aspectRatioY" format="integer" />
+        <attr name="imageResource" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+    <attr name="fontPath" format="string" />
+    <attr name="SwipeBackLayoutStyle" format="reference" />
+
+    <declare-styleable name="SwipeBackLayout">
+        <attr name="edge_size" format="dimension" />
+        <attr name="edge_flag">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+            <enum name="bottom" value="2" />
+            <enum name="all" value="3" />
+        </attr>
+        <attr name="shadow_left" format="reference" />
+        <attr name="shadow_right" format="reference" />
+        <attr name="shadow_bottom" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="StickyListHeadersListView">
+
+        <!-- View attributes -->
+        <attr name="android:clipToPadding" />
+        <attr name="android:scrollbars" />
+        <attr name="android:overScrollMode" />
+        <attr name="android:padding" />
+        <attr name="android:paddingLeft" />
+        <attr name="android:paddingTop" />
+        <attr name="android:paddingRight" />
+        <attr name="android:paddingBottom" />
+
+        <!-- ListView attributes -->
+        <attr name="android:fadingEdgeLength" />
+        <attr name="android:requiresFadingEdge" />
+        <attr name="android:cacheColorHint" />
+        <attr name="android:choiceMode" />
+        <attr name="android:drawSelectorOnTop" />
+        <attr name="android:fastScrollEnabled" />
+        <attr name="android:fastScrollAlwaysVisible" />
+        <attr name="android:listSelector" />
+        <attr name="android:scrollingCache" />
+        <attr name="android:scrollbarStyle" />
+        <attr name="android:divider" />
+        <attr name="android:dividerHeight" />
+        <attr name="android:transcriptMode" />
+
+        <!-- StickyListHeaders attributes -->
+        <attr name="hasStickyHeaders" format="boolean" />
+        <attr name="isDrawingListUnderStickyHeader" format="boolean" />
+    </declare-styleable>
+
+
+
+
+
+
+    <declare-styleable name="CenterMenuView">
+        <attr name="menu_icon" format="reference" />
+        <attr name="menu_title" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="SubsamplingScaleImageView">
+        <attr name="path" format="reference" />
+        <attr name="assetName" format="string" />
+        <attr name="panEnabled" format="boolean" />
+        <attr name="zoomEnabled" format="boolean" />
+        <attr name="quickScaleEnabled" format="boolean" />
+        <attr name="tileBackgroundColor" format="color" />
+    </declare-styleable>
+    <declare-styleable name="ProgressWheel">
+        <attr name="matProg_progressIndeterminate" format="boolean" />
+        <attr name="matProg_barColor" format="color" />
+        <attr name="matProg_rimColor" format="color" />
+        <attr name="matProg_rimWidth" format="dimension" />
+        <attr name="matProg_spinSpeed" format="float" />
+        <attr name="matProg_barSpinCycleTime" format="integer" />
+        <attr name="matProg_circleRadius" format="dimension" />
+        <attr name="matProg_fillRadius" format="boolean" />
+        <attr name="matProg_barWidth" format="dimension" />
+        <attr name="matProg_linearProgress" format="boolean" />
+    </declare-styleable>
+
+    <string-array name="animals">
+        <item>2015-05-01 12:32</item>
+        <item>2015-05-01 12:33</item>
+        <item>2015-05-01 12:34</item>
+        <item>2015-05-01 12:35</item>
+        <item>2015-05-01 12:36</item>
+        <item>2015-05-01 12:37</item>
+        <item>2015-05-01 12:38</item>
+        <item>2015-05-01 12:39</item>
+        <item>2015-05-01 12:50</item>
+        <item>2015-05-01 12:51</item>
+        <item>2015-05-01 12:52</item>
+        <item>2015-05-01 12:52</item>
+
+        <item>2015-05-02 12:32</item>
+        <item>2015-05-02 12:33</item>
+        <item>2015-05-02 12:34</item>
+        <item>2015-05-02 12:35</item>
+        <item>2015-05-02 12:36</item>
+        <item>2015-05-02 12:37</item>
+
+        <item>2015-05-03 12:11</item>
+        <item>2015-05-03 12:14</item>
+        <item>2015-05-03 12:22</item>
+        <item>2015-05-03 12:32</item>
+        <item>2015-05-03 12:33</item>
+        <item>2015-05-03 12:34</item>
+
+        <item>2015-05-04 12:32</item>
+        <item>2015-05-04 12:32</item>
+        <item>2015-05-04 12:32</item>
+        <item>2015-05-04 12:32</item>
+        <item>2015-05-04 12:32</item>
+        <item>2015-05-04 12:32</item>
+
+
+        <item>2015-05-05 12:32</item>
+        <item>2015-05-06 12:32</item>
+        <item>2015-05-07 12:32</item>
+        <item>2015-05-08 12:32</item>
+        <item>2015-05-09 12:32</item>
+        <item>2015-05-10 12:32</item>
+
+
+        <item>2015-05-11 12:32</item>
+        <item>2015-05-11 12:32</item>
+        <item>2015-05-11 12:32</item>
+        <item>2015-05-11 12:32</item>
+        <item>2015-05-11 12:32</item>
+        <item>2015-05-11 12:32</item>
+
+
+    </string-array>
+
+
+
+
+</resources>

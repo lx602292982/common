@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp" >
+
+    <com.spreadwin.common.common.weiget.ProgressBarCircular
+        android:id="@+id/progress"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:textSize="24sp"
+        android:layout_below="@+id/tintradio"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
+    
+
+    <TextView
+        android:id="@+id/lab_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ff009688"
+        android:gravity="center_horizontal"
+        android:singleLine="false"
+        android:text="努力加载中..."
+        android:textSize="16sp" />
+
+</LinearLayout>
