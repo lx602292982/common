@@ -5,8 +5,12 @@ import android.support.v7.widget.RecyclerView;
 import android.util.SparseArray;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
+import com.bumptech.glide.request.target.GlideDrawableImageViewTarget;
 import com.spreadwin.common.common.utils.ResourceUtil;
 
 
@@ -15,7 +19,7 @@ import com.spreadwin.common.common.utils.ResourceUtil;
  * Time: 2016/8/18 11:48
  */
 public class ViewHolder extends RecyclerView.ViewHolder {
-    private SparseArray<View> mViews;
+    public SparseArray<View> mViews;
     private View mConvertView;
 
     /**
@@ -69,4 +73,23 @@ public class ViewHolder extends RecyclerView.ViewHolder {
         view.setBackgroundResource(resId);
         return this;
     }
+
+    public void load(Context context, String url, int iv) {
+        ImageView view = getView(iv);
+        Glide.with(context)
+                .load(url)
+                .diskCacheStrategy(DiskCacheStrategy.ALL)//让Glide既缓存全尺寸图片，下次在任何ImageView中加载图片的时候，全尺寸的图片将从缓存中取出，重新调整大小，然后缓存
+                .crossFade()
+                .into(view);
+    }
+
+    public void gifload(Context context, String url, int iv) {
+        ImageView view = getView(iv);
+        Glide.with(context)
+                .load(url)
+                .diskCacheStrategy(DiskCacheStrategy.SOURCE)//让Glide既缓存全尺寸图片，下次在任何ImageView中加载图片的时候，全尺寸的图片将从缓存中取出，重新调整大小，然后缓存
+                .into(new GlideDrawableImageViewTarget(view, 1));
+    }
+
+
 }

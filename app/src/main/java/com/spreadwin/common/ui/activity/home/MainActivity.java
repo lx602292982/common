@@ -7,18 +7,19 @@ import android.support.v4.view.ViewPager;
 import com.spreadwin.common.R;
 import com.spreadwin.common.common.weiget.MyPagerAdapter;
 import com.spreadwin.common.ui.activity.BaseActivity;
+import com.spreadwin.common.ui.fragment.home.GifFragment;
 import com.spreadwin.common.ui.fragment.home.JoKeFragment;
+import com.spreadwin.common.ui.fragment.home.PictureFragment;
 
 import java.util.ArrayList;
 
-import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.InjectView;
 import cn.hugeterry.coordinatortablayout.CoordinatorTabLayout;
 
 public class MainActivity extends BaseActivity {
-    @BindView(R.id.collapsingtoolbarlayout)
     CoordinatorTabLayout mCoordinatorTabLayout;
-    @BindView(R.id.viewpage)
+    @InjectView(R.id.viewpage)
     ViewPager mViewPager;
     private int[] mImageArray, mColorArray;
     private ArrayList<Fragment> mFragments;
@@ -28,7 +29,7 @@ public class MainActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ButterKnife.bind(this);
+        ButterKnife.inject(this);
         initFragments();
         initViewPager();
         mImageArray = new int[]{
@@ -39,9 +40,9 @@ public class MainActivity extends BaseActivity {
                 android.R.color.holo_blue_light,
                 android.R.color.holo_red_light,
                 android.R.color.holo_orange_light,
-                android.R.color.holo_green_light};
-
-        mCoordinatorTabLayout.setTitle("Demo")
+        };
+        mCoordinatorTabLayout = (CoordinatorTabLayout) findViewById(R.id.coordinatortablayout);
+        mCoordinatorTabLayout.setTitle("爆笑段子")
                 .setBackEnable(true)
                 .setImageArray(mImageArray, mColorArray)
                 .setupWithViewPager(mViewPager);
@@ -49,14 +50,20 @@ public class MainActivity extends BaseActivity {
 
     private void initFragments() {
         mFragments = new ArrayList<>();
-        for (String title : mTitles) {
-            mFragments.add(JoKeFragment.newInstance(0));
-        }
+        mFragments.add(JoKeFragment.newInstance(0));
+        mFragments.add(PictureFragment.newInstance(1));
+        mFragments.add(GifFragment.newInstance(2));
     }
 
-    private void initViewPager(){
+    private void initViewPager() {
         mViewPager = (ViewPager) findViewById(R.id.viewpage);
         mViewPager.setOffscreenPageLimit(4);
         mViewPager.setAdapter(new MyPagerAdapter(getSupportFragmentManager(), mFragments, mTitles));
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        ButterKnife.reset(mContext);
     }
 }

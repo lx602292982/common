@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
 import android.util.Log;
 
 import com.spreadwin.common.R;
@@ -20,9 +19,8 @@ import com.spreadwin.common.ui.fragment.BaseMvpFragment;
 import java.util.ArrayList;
 import java.util.List;
 
-import butterknife.BindView;
-import butterknife.BindViews;
 import butterknife.ButterKnife;
+import butterknife.InjectView;
 
 /**
  * Created by lixiang on 2017/2/21.
@@ -34,10 +32,10 @@ public class JoKeFragment extends BaseMvpFragment<UserView, JoKePresenter> imple
 
     private static final String TAG = "MainActivity";
 
-    @BindView(R.id.type_item_recyclerview)
+    @InjectView(R.id.type_item_recyclerview)
     RecyclerView mRecyclerView;
 
-    @BindView(R.id.type_item_swipfreshlayout)
+    @InjectView(R.id.type_item_swipfreshlayout)
     SwipeRefreshLayout mSwipeRefreshLayout;
 
     private JokeItemAdapter mJokeItemAdapter;
@@ -73,16 +71,16 @@ public class JoKeFragment extends BaseMvpFragment<UserView, JoKePresenter> imple
 
     @Override
     protected void initView() {
-        ButterKnife.bind(getActivity());
+        ButterKnife.inject(getActivity());
         mSwipeRefreshLayout.setColorSchemeResources(R.color.colorPrimary, R.color.colorAccent, R.color.colorPrimaryDark);
         mSwipeRefreshLayout.setOnRefreshListener(this);
-        //实现首次自动显示加载提示
-        mSwipeRefreshLayout.post(new Runnable() {
-            @Override
-            public void run() {
-                mSwipeRefreshLayout.setRefreshing(true);
-            }
-        });
+//        //实现首次自动显示加载提示
+//        mSwipeRefreshLayout.post(new Runnable() {
+//            @Override
+//            public void run() {
+//                mSwipeRefreshLayout.setRefreshing(true);
+//            }
+//        });
 
         //上拉加载
         mJokeItemAdapter = new JokeItemAdapter(getActivity(), new ArrayList<JokeData>(), true);
@@ -107,7 +105,7 @@ public class JoKeFragment extends BaseMvpFragment<UserView, JoKePresenter> imple
         List<JokeData> jokeData = (List<JokeData>) data;
         mJokeItemAdapter.setData(jokeData);
         if (isLoadMore) {
-            if (mJokeItemAdapter.getItemCount() == 0) {
+            if (jokeData.size() == 0) {
                 mJokeItemAdapter.setLoadEndView(R.layout.load_end_layout);
             } else {
                 mJokeItemAdapter.setLoadMoreData(jokeData);
@@ -150,5 +148,11 @@ public class JoKeFragment extends BaseMvpFragment<UserView, JoKePresenter> imple
         } else {
             mSwipeRefreshLayout.setRefreshing(false);
         }
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        ButterKnife.reset(getActivity());
     }
 }

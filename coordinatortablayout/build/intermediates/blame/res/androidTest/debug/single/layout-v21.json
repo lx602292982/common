@@ -1,18 +1,34 @@
 [
     {
-        "merged": "F:\\AndroidStudioProjects\\Common\\coordinatortablayout\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-v21\\notification_template_custom_big.xml",
-        "source": "F:\\AndroidStudioProjects\\Common\\coordinatortablayout\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout-v21\\notification_template_custom_big.xml"
+        "merged": "/Users/lixiang/yzqs/AndroidStudioProject/common/coordinatortablayout/build/intermediates/res/merged/androidTest/debug/layout-v21/notification_template_custom_big.xml",
+        "source": "/Users/lixiang/yzqs/AndroidStudioProject/common/coordinatortablayout/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout-v21/notification_template_custom_big.xml"
     },
     {
-        "merged": "F:\\AndroidStudioProjects\\Common\\coordinatortablayout\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-v21\\notification_action_tombstone.xml",
-        "source": "F:\\AndroidStudioProjects\\Common\\coordinatortablayout\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout-v21\\notification_action_tombstone.xml"
+        "merged": "/Users/lixiang/yzqs/AndroidStudioProject/common/F:\\AndroidStudioProjects\\Common\\coordinatortablayout\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-v21\\notification_template_custom_big.xml",
+        "source": "/Users/lixiang/yzqs/AndroidStudioProject/common/F:\\AndroidStudioProjects\\Common\\coordinatortablayout\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout-v21\\notification_template_custom_big.xml"
     },
     {
-        "merged": "F:\\AndroidStudioProjects\\Common\\coordinatortablayout\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-v21\\notification_template_icon_group.xml",
-        "source": "F:\\AndroidStudioProjects\\Common\\coordinatortablayout\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout-v21\\notification_template_icon_group.xml"
+        "merged": "/Users/lixiang/yzqs/AndroidStudioProject/common/coordinatortablayout/build/intermediates/res/merged/androidTest/debug/layout-v21/notification_action.xml",
+        "source": "/Users/lixiang/yzqs/AndroidStudioProject/common/coordinatortablayout/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout-v21/notification_action.xml"
     },
     {
-        "merged": "F:\\AndroidStudioProjects\\Common\\coordinatortablayout\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-v21\\notification_action.xml",
-        "source": "F:\\AndroidStudioProjects\\Common\\coordinatortablayout\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout-v21\\notification_action.xml"
+        "merged": "/Users/lixiang/yzqs/AndroidStudioProject/common/F:\\AndroidStudioProjects\\Common\\coordinatortablayout\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-v21\\notification_action_tombstone.xml",
+        "source": "/Users/lixiang/yzqs/AndroidStudioProject/common/F:\\AndroidStudioProjects\\Common\\coordinatortablayout\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout-v21\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/Users/lixiang/yzqs/AndroidStudioProject/common/coordinatortablayout/build/intermediates/res/merged/androidTest/debug/layout-v21/notification_template_icon_group.xml",
+        "source": "/Users/lixiang/yzqs/AndroidStudioProject/common/coordinatortablayout/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/Users/lixiang/yzqs/AndroidStudioProject/common/F:\\AndroidStudioProjects\\Common\\coordinatortablayout\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-v21\\notification_template_icon_group.xml",
+        "source": "/Users/lixiang/yzqs/AndroidStudioProject/common/F:\\AndroidStudioProjects\\Common\\coordinatortablayout\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout-v21\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/Users/lixiang/yzqs/AndroidStudioProject/common/coordinatortablayout/build/intermediates/res/merged/androidTest/debug/layout-v21/notification_action_tombstone.xml",
+        "source": "/Users/lixiang/yzqs/AndroidStudioProject/common/coordinatortablayout/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/Users/lixiang/yzqs/AndroidStudioProject/common/F:\\AndroidStudioProjects\\Common\\coordinatortablayout\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-v21\\notification_action.xml",
+        "source": "/Users/lixiang/yzqs/AndroidStudioProject/common/F:\\AndroidStudioProjects\\Common\\coordinatortablayout\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout-v21\\notification_action.xml"
     }
 ]
